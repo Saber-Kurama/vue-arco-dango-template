@@ -1,0 +1,15 @@
+{
+  "name": "vue-arco-dango-tempalte",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "hook",
+    "template",
+    "template-for-monorepo"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "vue":"^3.2.31",
+    "vue-inbrowser-compiler-demi": "4.44.21"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@CONST_PACKAGE_NAME@",
+  "version": "0.0.3",
+  "description": "带有查询的表格",
+  "keywords": [
+    "vue",
+    "arco-design"
+  ],
+  "author": "",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "umd": {
+    "file": "dist/index.min.js",
+    "style": "dist/css/index.css",
+    "module": "ArcoMaterial"
+  },
+  "scripts": {
+    "build": "arco-vue-scripts build:material 'src/index.ts' & npm run dtsgen",
+    "docgen": "arco-vue-scripts docgen -i 'src/TEMPLATE.md'",
+    "dtsgen": "arco-vue-scripts dtsgen 'src/*.{ts,tsx,vue}'",
+    "test": "arco-vue-scripts test",
+    "clean": "rm -rf dist && rm -rf docs",
+    "prepublishOnly": "npm run clean && npm run build && npm run docgen",
+    "preview": "arco preview"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0",
+    "@arco-design/web-vue": "^2.19.0"
+  },
+  "devDependencies": {
+    "@arco-design/arco-vue-scripts": "^0.2.9"
+  },
+  "publishConfig": {
+    "registry": "",
+    "access": "public"
+  },
+  "_files": [
+    "dist",
+    "docs"
+  ]
+}
