@@ -1,0 +1,62 @@
+{
+  "name": "@CONST_PACKAGE_NAME@",
+  "version": "0.0.5",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "engines": {
+    "node": ">=10",
+    "pnpm": ">=3"
+  },
+  "bugs": {},
+  "author": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Saber-Kurama/vue3-transitions.git"
+  },
+  "scripts": {
+    "build": "pnpm run build:component && pnpm run build:style",
+    "build:component": "dango-vue build:component",
+    "build:style": "dango-vue build:style",
+    "change": "pnpm changeset",
+    "vp": "pnpm changeset version",
+    "pub": "pnpm changeset publish",
+    "release": "pnpm changeset publish",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "docgen": "arco-vue-scripts docgen -i 'src/TEMPLATE.md'",
+    "sync": "arco sync",
+    "generate": "arco generate"
+  },
+  "devDependencies": {
+    "@arco-design/web-vue": "^2.20.0",
+    "@arco-design/arco-vue-scripts": "^0.2.9",
+    "@babel/core": "^7.17.5",
+    "@changesets/cli": "^2.20.0",
+    "@dangojs/vue-scripts": "^0.0.4",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/vue3": "^6.4.19",
+    "babel-loader": "^8.2.3",
+    "rollup": "^2.67.2",
+    "typescript": "^4.5.5",
+    "vue": "^3.2.31",
+    "vue-loader": "^16.8.3"
+  },
+  "publishConfig": {
+    "registry": "",
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@arco-design/web-vue": "^2.20.0",
+    "vue": "^3.2.31"
+  },
+  "_files": [
+    "es",
+    "lib",
+    "docs"
+  ]
+}

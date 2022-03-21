@@ -1,0 +1,206 @@
+/* FadeTransition start*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.3s;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 0.3s;
+}
+.fade-move {
+  transition: transform 0.3s ease-out;
+}
+/* FadeTransition end */
+
+/* move.css start*/
+.slide-move {
+  transition: transform 0.3s;
+}
+/* move.css end*/
+
+/* SlideYUpTransition start */
+@keyframes slideYIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slideYIn {
+  animation-name: slideYIn;
+}
+
+@keyframes slideYOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
+
+.slideYOut {
+  animation-name: slideYOut;
+}
+
+/* SlideYUpTransition end */
+
+/* SlideYUpTransition start*/
+@keyframes slideYDownIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slideYDownIn {
+  animation-name: slideYDownIn;
+}
+
+@keyframes slideYDownOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+}
+
+.slideYDownOut {
+  animation-name: slideYDownOut;
+}
+/* SlideYUpTransition end */
+
+/* SlideXLeftTransition start*/
+@keyframes slideXLeftIn {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slideXLeftIn {
+  animation-name: slideXLeftIn;
+}
+
+@keyframes slideXLeftOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+}
+
+.slideXLeftOut {
+  animation-name: slideXLeftOut;
+}
+/* SlideXLeftTransition end*/
+
+/* SlideXRightTransition start*/
+@keyframes slideXRightIn {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slideXRightIn {
+  animation-name: slideXRightIn;
+}
+
+@keyframes slideXRightOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+}
+
+.slideXRightOut {
+  animation-name: slideXRightOut;
+}
+/* SlideXRightTransition end */
+
+
+/* zoom-move */
+.zoom-move {
+  transition: transform .3s ease-out;
+}
+
+/* ZoomCenterTransition start */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+}
+/* ZoomCenterTransition end */

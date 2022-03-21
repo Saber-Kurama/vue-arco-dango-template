@@ -1,0 +1,14 @@
+{
+  "name": "vue-arco-dango-component-template",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "hook",
+    "template",
+    "template-for-monorepo"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "arco-cli-dev-utils": "^1.6.0"
+  }
+}
