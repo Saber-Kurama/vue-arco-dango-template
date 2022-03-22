@@ -1,0 +1,9 @@
+{
+  // 插件配置项
+  "fileheader.configObj": {
+    "autoAdd": false, // 检测文件没有头部注释，自动添加文件头部注释
+    "autoAddLine": 180, // 文件超过多少行数 不再自动添加头部注释,
+    // 自动添加头部注释黑名单
+    "prohibitAutoAdd": ["json", "md", "html", "vue"]
+  }
+}
