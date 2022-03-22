@@ -1,9 +1,16 @@
 {
   "name": "@CONST_PACKAGE_NAME@",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "description": "",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "umd": {
+    "file": "dist/index.min.js",
+    "style": "dist/css/index.css",
+    "module": "ArcoMaterial"
+  },
+  "buildInput": "src/index.ts",
   "engines": {
     "node": ">=10",
     "pnpm": ">=3"
@@ -12,21 +19,28 @@
   "author": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Saber-Kurama/vue3-transitions.git"
+    "url": ""
   },
   "scripts": {
-    "build": "pnpm run build:component && pnpm run build:style",
-    "build:component": "dango-vue build:component",
-    "build:style": "dango-vue build:style",
+    "dev": "npm run storybook",
+    "build": "arco-vue-scripts build:material 'src/index.vue' & npm run dtsgen",
+    "docgen": "arco-vue-scripts docgen -i 'src/TEMPLATE.md'",
+    "dtsgen": "arco-vue-scripts dtsgen 'src/*.{ts,tsx,vue}'",
+    "test": "arco-vue-scripts test",
+    "clean": "rm -rf dist && rm -rf docs",
+    "prepublishOnly": "npm run clean && npm run build && npm run docgen",
+    "preview": "arco preview",
+    "sync": "arco sync",
+    "generate": "arco generate",
+    "build:dango": "pnpm run build:component && pnpm run build:style",
+    "build:dango:component": "dango-vue build:component",
+    "build:dango:style": "dango-vue build:style",
     "change": "pnpm changeset",
     "vp": "pnpm changeset version",
     "pub": "pnpm changeset publish",
     "release": "pnpm changeset publish",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "docgen": "arco-vue-scripts docgen -i 'src/TEMPLATE.md'",
-    "sync": "arco sync",
-    "generate": "arco generate"
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.20.0",
