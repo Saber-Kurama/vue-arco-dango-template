@@ -1,15 +1,19 @@
 {
   "name": "vue-arco-dango-tempalte",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "files": [
-    "hook",
-    "template",
-    "template-for-monorepo"
-  ],
+  "description": "", 
   "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "change": "pnpm changeset",
+    "vp": "pnpm changeset version",
+    "pub": "pnpm changeset publish",
+    "release": "pnpm changeset publish"
+  },
   "dependencies": {
-    "vue":"^3.2.31",
-    "vue-inbrowser-compiler-demi": "4.44.21"
+    "@changesets/cli": "^2.21.0"
   }
 }
