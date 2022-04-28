@@ -1,6 +1,6 @@
 import '../src/style';
 
-export * from '../src/demo';
+export * from '../demo';
 
 // import TooltipButton from '../src/TooltipButton.vue';
 export default {

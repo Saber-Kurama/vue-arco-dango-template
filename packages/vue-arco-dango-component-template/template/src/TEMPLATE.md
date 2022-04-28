@@ -1,6 +1,6 @@
-## 组件  ZoomCenterTransition
+## 组件  
 %%API(./Zoom/ZoomCenterTransition.vue)%%
 
 ## Demos
 
-%%MATERIAL(demo/index.ts)%%
+%%MATERIAL(./demo/index.ts)%%
