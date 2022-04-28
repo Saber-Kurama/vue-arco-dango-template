@@ -76,6 +76,7 @@
   "_files": [
     "es",
     "lib",
-    "docs"
+    "docs",
+    "demo"
   ]
 }
