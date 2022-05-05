@@ -1,5 +1,11 @@
 # @dangojs/vue-arco-dango-component-template
 
+## 0.0.4
+
+### Patch Changes
+
+- 添加支持 arco meta 的信息
+
 ## 0.0.3
 
 ### Patch Changes
