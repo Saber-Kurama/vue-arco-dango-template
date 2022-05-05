@@ -1,7 +1,7 @@
 {
   "name": "@CONST_PACKAGE_NAME@",
-  "version": "0.0.3",
-  "description": "带有查询的表格",
+  "version": "0.0.1",
+  "description": "组件描述",
   "keywords": [
     "vue",
     "arco-design"
