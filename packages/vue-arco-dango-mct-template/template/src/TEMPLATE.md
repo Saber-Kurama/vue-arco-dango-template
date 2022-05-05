@@ -2,4 +2,4 @@
 
 ## Demos
 
-%%MATERIAL(demo/index.ts)%%
+%%MATERIAL(../demo/index.ts)%%

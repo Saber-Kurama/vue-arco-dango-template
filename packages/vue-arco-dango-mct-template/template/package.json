@@ -38,6 +38,16 @@
   },
   "_files": [
     "dist",
+    "es",
+    "lib",
+    "demo",
     "docs"
-  ]
+  ],
+  "arcoMeta": {
+    "type": "vue-component",
+    "title": "@CONST_PACKAGE_NAME@",
+    "category": [
+      "数据展示"
+    ]
+  }
 }
