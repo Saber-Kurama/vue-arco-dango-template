@@ -1,5 +1,11 @@
 # @dangojs/vue-arco-dango-mct-tempalte
 
+## 0.0.4
+
+### Patch Changes
+
+- 调整模板的 files 添加 **demo**
+
 ## 0.0.3
 
 ### Patch Changes
