@@ -1,8 +1,10 @@
+
 import '../src/style';
-import AQueryTable from '../src/QueryTable.vue';
+import SaberArcoButtonDemo from '../src';
+
 export * from '../demo';
 
 export default {
-  title: 'components/a-query-table',
-  component: AQueryTable 
+  title: '@dangojs/saber-arco-button-demo',
+  component: SaberArcoButtonDemo
 };

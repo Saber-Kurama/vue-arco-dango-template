@@ -1,10 +1,11 @@
+
 ## zh-CN
 ```yaml
 meta:
   type: 组件
   category: 通用
-title: 查询表格 QueryTable
-description: 查询表格
+title: 气泡按钮 arco-button-demo
+description: 带气泡的按钮
 ```
 ---
 ## en-US
@@ -12,13 +13,15 @@ description: 查询表格
 meta:
   type: Component
   category: Common
-title: QueryTable 
+title: arco-button-demo 
 description: 
 ```
 ---
 
 @import ../__demo__/basic.md
 
+
 ## API
 
-%%API(QueryTable.vue)%%
+%%API(saber-arco-button-demo.tsx)%%
+

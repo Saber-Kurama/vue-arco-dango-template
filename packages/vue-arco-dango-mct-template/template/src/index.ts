@@ -1,5 +1,10 @@
 
-// todo: install
-import AQueryTable from './QueryTable.vue';
+import { App } from "vue";
+import SaberArcoButtonDemo from "./saber-arco-button-demo";
 
-export default AQueryTable;
+const install = (app: App) => {
+  app.component(SaberArcoButtonDemo.name, SaberArcoButtonDemo);
+};
+SaberArcoButtonDemo.install = install;
+
+export default SaberArcoButtonDemo;
