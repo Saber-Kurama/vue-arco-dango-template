@@ -1,5 +1,11 @@
 # @dangojs/vue-arco-dango-mct-tempalte
 
+## 0.0.5
+
+### Patch Changes
+
+- 更新模板结构
+
 ## 0.0.4
 
 ### Patch Changes
