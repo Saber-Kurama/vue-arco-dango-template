@@ -1,6 +1,6 @@
 {
   "name": "@dangojs/vue-arco-dango-component-template",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "files": [
     "hook",

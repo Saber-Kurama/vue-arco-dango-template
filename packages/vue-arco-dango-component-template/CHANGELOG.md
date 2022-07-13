@@ -1,5 +1,11 @@
 # @dangojs/vue-arco-dango-component-template
 
+## 0.0.5
+
+### Patch Changes
+
+- 构建的时候忽略 node_modules 的依赖
+
 ## 0.0.4
 
 ### Patch Changes
