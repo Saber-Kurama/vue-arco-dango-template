@@ -1,5 +1,11 @@
 # @dangojs/vue-arco-dango-mct-tempalte
 
+## 0.1.0
+
+### Minor Changes
+
+- 采用 digit-vue-scripts build 构建 支持 vite
+
 ## 0.0.6
 
 ### Patch Changes
