@@ -14,23 +14,32 @@
   "umd": {
     "file": "dist/index.min.js",
     "style": "dist/css/index.css",
-    "module": "ArcoMaterial"
+    "module": "DigitMaterial"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.js"
+    }
   },
   "scripts": {
-    "build": "arco-vue-scripts build:material 'src/index.ts' & npm run dtsgen",
-    "docgen": "arco-vue-scripts docgen -i 'src/TEMPLATE.md'",
-    "dtsgen": "arco-vue-scripts dtsgen 'src/*.{ts,tsx,vue}'",
-    "test": "arco-vue-scripts test",
+    "build": "digit-vue-scripts build:material \"src/index.ts\" & npm run genvitepress",
+    "docgen": "digit-vue-scripts docgen -i \"src/TEMPLATE.md\"",
+    "dtsgen": "digit-vue-scripts dtsgen \"src/*.{ts,tsx,vue}\"",
+    "genvitepress": "digit-vue-scripts doc-vitepress",
+    "genapi": "digit-vue-scripts genapi",
+    "test": "digit-vue-scripts test",
     "clean": "rm -rf dist && rm -rf docs",
     "prepublishOnly": "npm run clean && npm run build && npm run docgen",
     "preview": "arco preview"
   },
   "peerDependencies": {
-    "vue": "^3.2.0",
-    "@arco-design/web-vue": "^2.19.0"
+    "vue": "^3.3.4",
+    "@arco-design/web-vue": "^2.48.1"
   },
   "devDependencies": {
-    "@arco-design/arco-vue-scripts": "^0.2.9"
+    "@dangojs/digit-vue-scripts": "^0.1.2"
   },
   "publishConfig": {
     "registry": "",
